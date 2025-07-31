@@ -8,7 +8,7 @@ on the user's inputs
  ----- main file
 """
 
-import threading
+import threading #modules and libraries
 import keylog_control
 import keylog_mouse
 from pynput import keyboard, mouse
@@ -52,8 +52,7 @@ class Run:
 
     def mouse_tp(self):
         keylog_control.ctrl_mouse()# moves mouse to random location
-        keylog_control.ctrl_keyboard() #types a word on keyboard
-        print("Mouse and keyboard teleportation executed.")
+        print("Mouse teleportation executed.")
 
 # Command menu
 commands = {
@@ -88,27 +87,13 @@ while True:
 
 
 
-""" Sadia Ideas:
-
-2 classes, 1 subclass ( ) used for characters, subclass for letters bc we need to add A & a
-together to have combined letter count. 2nd class is for IDK YET maybe the commands?
- --- class must have 1 object ( )count for how many times pressed & 1 method ( ) counting
-list  (X) of all characters that shows how many times you've written them
-strings (X) used to talk to user in console + for actual keylogging lol
-2+ functions (X) for displaying and logging
-while or for loop (X) for display of character usage (see character usage? yes. show all)
-conditional statement (X) for cleaning key data
-custom module (X) control module and mouse module
-error detection. ruh roh (X) for user input of commands
-file operations and output (X) log.txt
-NO UI >:(
-
+""" 
 
 Program runs as follows :
 
 - turn on keylogger + keycounter 
 - say hi to user, explain everything, tell them to do stuff w their laptop
-- give list* of commands (display log.txt, see stats, clear log.txt, display mog.txt,
+- give list* of commands (display log.txt, clear log.txt, display mog.txt,
 kill program), get input response & use error detection there
 
 """
