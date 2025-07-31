@@ -16,9 +16,6 @@ def ctrl_mouse(): # function moves user's mouse
     mouse = Controller()
     mouse.position = (random.randint(10, 300),random.randint(10,400)) #puts mouse in top left of screen
 
-def ctrl_keyboard():
-    keyboard = Controller()
-    keyboard.type("meow")
 
 # THE keylogger <3 writes all inputs down to log.txt
 def writeToLog(key):
